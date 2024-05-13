@@ -272,8 +272,10 @@ void loop()
   display.drawBitmap(0,0,canvas.getBuffer(),128,32,1,0);
   display.display();
   //display.startscrolldiagright(0x0F, 0x0F);
+
+  // Blinking by diodes temporary disabled
   
-  for(int i = 0;i<5;i++)
+  /*for(int i = 0;i<5;i++)
   {
     digitalWrite(GREEN_LED,HIGH);
     delay(10);
@@ -286,7 +288,7 @@ void loop()
     delay(10);
     digitalWrite(RED_LED,LOW);
     delay(50);
-  }
+  }*/
   delay(400);
 }
 
